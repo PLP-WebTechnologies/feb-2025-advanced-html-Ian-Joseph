@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Elements</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Advanced HTML5 Elements and Forms</h1>
+    
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Ordered List</h2>
+    <ol type="I">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+        <li>Item Four</li>
+    </ol>
+    
+    <!-- External Image -->
+    <h2>External Image</h2>
+    <img src="https://images.pexels.com/photos/31223301/pexels-photo-31223301/free-photo-of-dramatic-tokyo-skyline-at-twilight-with-tokyo-tower.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Sample Image from Pexels" width="600">
+    
+    <!-- Contacts Table -->
+    <h2>Contacts Table</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>Westlands, Nairobi</td>
+            <td>+254 734 567989</td>
+            <td>johndoe@example.com</td>
+        </tr>
+        <tr>
+            <td>Jane Doe</td>
+            <td>Kilimani, Nairobi</td>
+            <td>+254 765 114321</td>
+            <td>janedoe@example.com</td>
+        </tr>
+        <tr>
+            <td>Myles Monroe</td>
+            <td>Kileleshwa, Nairobi</td>
+            <td>+254 722 333445</td>
+            <td>mylesmonroe@example.com</td>
+        </tr>
+        <tr>
+            <td>Lisa Mint</td>
+            <td>Westlands, Nairobi</td>
+            <td>+254 734 234556</td>
+            <td>lisamint@example.com</td>
+        </tr>
+        <tr>
+            <td>Ian Joseph</td>
+            <td>Kitisuru, Nairobi</td>
+            <td>+254 780 044241</td>
+            <td>ianjoseph@example.com</td>
+        </tr>
+    </table>
+    
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <br><br>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+        
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required> Male
+        <input type="radio" id="female" name="gender" value="female" required> Female
+        <input type="radio" id="other" name="gender" value="other" required> Other
+        <br><br>
+        
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select a country</option>
+            <option value="usa">Kenya</option>
+            <option value="uk">South Africa</option>
+            <option value="canada">New Zealand</option>
+            <option value="australia">Australia</option>
+        </select>
+        <br><br>
+        
+        <label>Interests:</label><br>
+        <input type="checkbox" name="interests" value="coding"> Coding
+        <input type="checkbox" name="interests" value="music"> Music
+        <input type="checkbox" name="interests" value="sports"> Sports
+        <br><br>
+        
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
